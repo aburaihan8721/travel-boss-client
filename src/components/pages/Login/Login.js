@@ -1,16 +1,26 @@
 import React from "react";
+import { useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
-  const { loginUsingGoogle, setUser } = useAuth();
+  const { loginUsingGoogle, setUser, setIsPending } = useAuth();
+
+  const history = useHistory();
+  const location = useLocation();
+
+  const url = location.state?.from || "/home";
 
   const handleGoogleLogin = () => {
     loginUsingGoogle()
       .then((result) => {
         setUser(result.user);
+        history.push(url);
       })
       .catch((error) => {
         console.log(error.message);
+      })
+      .finally(() => {
+        setIsPending(false);
       });
   };
   return (
