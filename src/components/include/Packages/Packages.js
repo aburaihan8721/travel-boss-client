@@ -6,7 +6,7 @@ const Packages = () => {
   const [packagesData, setPackagesData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/packages`)
+    fetch(`https://safe-tor-64824.herokuapp.com/`)
       .then((res) => res.json())
       .then((data) => setPackagesData(data));
   }, []);
