@@ -46,9 +46,9 @@ function App() {
               <ManageAllOrders />
             </Route>
 
-            <Route exact path="/addService">
+            <PrivateRoute exact path="/addService">
               <AddService />
-            </Route>
+            </PrivateRoute>
 
             <PrivateRoute exact path="/package/:id">
               <PlaceOrder />

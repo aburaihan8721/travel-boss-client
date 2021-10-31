@@ -44,6 +44,12 @@ const MenuBar = () => {
                 </Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link" to="/addService">
+                  Add Service
+                </Link>
+              </li>
+
               {user?.email && (
                 <li className="nav-item">
                   <Link className="nav-link" to="/myOrders">
@@ -56,14 +62,6 @@ const MenuBar = () => {
                 <li className="nav-item">
                   <Link className="nav-link" to="/allOrders">
                     All Orders
-                  </Link>
-                </li>
-              )}
-
-              {user?.email && (
-                <li className="nav-item">
-                  <Link className="nav-link" to="/addService">
-                    Add Service
                   </Link>
                 </li>
               )}

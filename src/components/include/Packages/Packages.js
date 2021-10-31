@@ -6,7 +6,7 @@ const Packages = () => {
   const [packagesData, setPackagesData] = useState([]);
 
   useEffect(() => {
-    fetch(`/fakeData.json`)
+    fetch(`http://localhost:5000/packages`)
       .then((res) => res.json())
       .then((data) => setPackagesData(data));
   }, []);
@@ -30,7 +30,7 @@ const Packages = () => {
 
         <div className="row g-4">
           {packagesData.map((singlePackage) => (
-            <div className="col-md-4">
+            <div className="col-md-4" key={singlePackage._id}>
               <div className="single-package border p-2 shadow">
                 <div>
                   <img className="img-fluid" src={singlePackage.image} alt="img" />
@@ -39,7 +39,7 @@ const Packages = () => {
                 <p>{singlePackage.shortDes}</p>
                 <h5>{singlePackage.price}</h5>
 
-                <Link to={`/package/${singlePackage.id}`}>
+                <Link to={`/package/${singlePackage._id}`}>
                   <button className="btn btn-outline-info text-capitalize text-dark">book now</button>
                 </Link>
               </div>
