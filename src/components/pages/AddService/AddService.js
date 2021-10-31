@@ -1,12 +1,13 @@
 import React from "react";
+import "./AddService.css";
 
-const Test = () => {
+const AddService = () => {
   return (
-    <div className="bg-secondary">
+    <div className="section-margin py-5">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h1>Test page</h1>
+            <h1>Add service is coming.....</h1>
           </div>
         </div>
       </div>
@@ -14,4 +15,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default AddService;

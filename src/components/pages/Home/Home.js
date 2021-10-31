@@ -1,16 +1,17 @@
 import React from "react";
+import Banner from "../../include/Banner/Banner";
+import Contact from "../../include/Contact/Contact";
+import Packages from "../../include/Packages/Packages";
+import Review from "../../include/Review/Review";
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="bg-success">
-      <div className="container">
-        <h1>home pages</h1>
-
-        <div className="row">
-          <div className="col-md-12"></div>
-        </div>
-      </div>
+    <div>
+      <Banner></Banner>
+      <Packages></Packages>
+      <Review></Review>
+      <Contact></Contact>
     </div>
   );
 };

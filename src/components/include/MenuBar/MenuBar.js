@@ -7,10 +7,10 @@ import "./MenuBar.css";
 const MenuBar = () => {
   const { user, logOut } = useAuth();
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+    <div id="menu-area">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand text-white fs-2 fw-bold" to="/">
             Travel Boss
           </Link>
           <button
@@ -25,32 +25,66 @@ const MenuBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/home">
+                <Link className="nav-link" aria-current="page" to="/home">
                   Home
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/test">
-                  Test
+                <Link className="nav-link" to="/blogs">
+                  Blogs
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="/login">
-                  Login
+                <Link className="nav-link" to="/gallery">
+                  Gallery
                 </Link>
               </li>
+
+              {user?.email && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/myOrders">
+                    My Orders
+                  </Link>
+                </li>
+              )}
+
+              {user?.email && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/allOrders">
+                    All Orders
+                  </Link>
+                </li>
+              )}
+
+              {user?.email && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/addService">
+                    Add Service
+                  </Link>
+                </li>
+              )}
+
+              {!user?.email && (
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">
+                    <button className="btn btn-warning">Login</button>
+                  </Link>
+                </li>
+              )}
             </ul>
 
             {user?.email && (
-              <button onClick={logOut} className="btn btn-primary me-2">
-                Log-out
-              </button>
+              <div>
+                <button onClick={logOut} className="btn btn-warning mx-2">
+                  Log-out
+                </button>
+                <span className="navbar-text text-white me-1">{user?.displayName}</span>
+              </div>
             )}
-            {user?.email && <span className="navbar-text text-white me-1">{user?.displayName}</span>}
           </div>
         </div>
       </nav>

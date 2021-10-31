@@ -1,0 +1,11 @@
+.banner-bg {
+    margin-top: 50px;
+  background-color: #1a2020;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)),
+    url("https://cdn.pixabay.com/photo/2021/02/05/01/22/man-5983064_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  padding-top: 200px;
+}
