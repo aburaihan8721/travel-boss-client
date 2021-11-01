@@ -8,7 +8,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("http://localhost:5000/packages", data).then((res) => {
+    axios.post("https://safe-tor-64824.herokuapp.com/packages", data).then((res) => {
       if (res.data.insertedId) {
         alert("Data Added Successfully");
         reset();
