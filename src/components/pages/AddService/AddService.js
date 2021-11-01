@@ -8,7 +8,7 @@ const AddService = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("https://safe-tor-64824.herokuapp.com/", data).then((res) => {
+    axios.post("http://localhost:5000/packages", data).then((res) => {
       if (res.data.insertedId) {
         alert("Data Added Successfully");
         reset();
@@ -19,9 +19,9 @@ const AddService = () => {
   return (
     <div className="section-margin py-5">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="w-50 mx-auto border border-info p-3">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="border border-info p-3">
               <form onSubmit={handleSubmit(onSubmit)}>
                 <h2 className="text-center py-3">
                   Add <span className="text-primary">Service</span>

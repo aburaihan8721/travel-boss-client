@@ -5,9 +5,9 @@ const Review = () => {
   return (
     <div className="py-5" id="review">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="w-50 mx-auto text-center py-3">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="text-center py-3">
               <h2>
                 What Our <span className="text-primary">Client</span> Say
               </h2>

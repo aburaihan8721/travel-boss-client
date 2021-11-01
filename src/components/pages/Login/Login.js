@@ -29,13 +29,15 @@ const Login = () => {
   return (
     <div className="custom-bg py-5 mt-5">
       <div className="container">
-        <h2 className="text-center py-3">Travel <span className="text-info">Boss</span> </h2>
+        <h2 className="text-center py-3">
+          Travel <span className="text-info">Boss</span>{" "}
+        </h2>
 
-        <div className="row w-50 mx-auto">
-          <div className="col-md-12">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
             <div className="text-center mt-3" id="custom-pd">
               <h3 className="py-2">Login With</h3>
-              <button onClick={handleGoogleLogin} className="btn btn-outline-info text-capitalize">
+              <button onClick={handleGoogleLogin} className="btn btn-outline-info text-capitalize text-center">
                 <FontAwesomeIcon icon={faGoogle} className="fs-5" /> <span>Continue with Google</span>
               </button>
             </div>

@@ -6,8 +6,8 @@ const Contact = () => {
     <div id="contact-area" className="py-3">
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            <div className="w-50 mx-auto text-center py-3">
+          <div className="col-md-6">
+            <div className="text-center py-3">
               <h2>
                 <span className="text-primary">Contact</span> Us
               </h2>
@@ -27,7 +27,6 @@ const Contact = () => {
                 width="600"
                 height="450"
                 style={{ border: 0 }}
-                allowfullscreen=""
                 loading="lazy"
               ></iframe>
             </div>
@@ -36,12 +35,39 @@ const Contact = () => {
           <div className="col-md-6">
             <div className="form-b">
               <form>
-              <h3 className="text-center text-capitalize py-3">contact form</h3>
-                <input class="form-control mb-3 text-capitalize" type="text" name="" id="" placeholder="your name" />
-                <input class="form-control mb-3 text-capitalize" type="email" name="" id="" placeholder="your email" />
-                <input class="form-control mb-3 text-capitalize" type="number" name="" id="" placeholder="your phone no" />
-                <textarea class="form-control mb-3 text-capitalize" name="" id="" placeholder="Leave a comment here"></textarea>
-                <input class="form-control mb-3 text-capitalize bg-secondary fw-bold" type="submit" value="send message" />
+                <h3 className="text-center text-capitalize py-3">contact form</h3>
+                <input
+                  class="form-control mb-3 text-capitalize"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="your name"
+                />
+                <input
+                  class="form-control mb-3 text-capitalize"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="your email"
+                />
+                <input
+                  class="form-control mb-3 text-capitalize"
+                  type="number"
+                  name=""
+                  id=""
+                  placeholder="your phone no"
+                />
+                <textarea
+                  class="form-control mb-3 text-capitalize"
+                  name=""
+                  id=""
+                  placeholder="Leave a comment here"
+                ></textarea>
+                <input
+                  class="form-control mb-3 text-capitalize bg-secondary fw-bold"
+                  type="submit"
+                  value="send message"
+                />
               </form>
             </div>
           </div>

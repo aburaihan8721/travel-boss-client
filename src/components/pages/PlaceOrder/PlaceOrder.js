@@ -13,7 +13,7 @@ const PlaceOrder = () => {
   // console.log(id);
 
   useEffect(() => {
-    fetch(`https://safe-tor-64824.herokuapp.com/${id}`)
+    fetch(`http://localhost:5000/packages/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(res.statusText);
@@ -47,8 +47,9 @@ const PlaceOrder = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="border border-success p-3">
+              {" "}
               <div>
-                <img className="img-fluid" src={singlePackage.image} alt="" />
+                <img className="img-fluid" src={singlePackage.image} alt="" />{" "}
               </div>
               <h4>{singlePackage.title}</h4>
               <p>{singlePackage.shortDes}</p>

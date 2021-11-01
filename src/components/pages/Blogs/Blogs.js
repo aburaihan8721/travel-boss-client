@@ -5,9 +5,9 @@ const Blogs = () => {
   return (
     <div className="section-margin py-3">
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="w-50 mx-auto text-center py-3">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="text-center py-3">
               <h2>
                 Our <span className="text-primary">Blogs</span>
               </h2>
@@ -18,10 +18,12 @@ const Blogs = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="row ">
-          <div className="col-12-md">
-            <div className="w-50 mx-auto mb-3 mt-3">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="mb-3 mt-3">
               <h4>The soul of adventure</h4>
               <p>
                 What defines adventure? For me it’s very simple: the very possibility of death, as remote as it may
@@ -49,9 +51,10 @@ const Blogs = () => {
               <button className="btn btn-outline-primary ">Read More</button>
             </div>
           </div>
-
-          <div className="col-12-md">
-            <div className="w-50 mx-auto mt-3">
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="mt-3">
               <h4>All about Katrina - Vicky’s exotic wedding venue in Rajasthan</h4>
               <p>
                 What defines adventure? For me it’s very simple: the very possibility of death, as remote as it may
@@ -79,9 +82,10 @@ const Blogs = () => {
               <button className="btn btn-outline-primary ">Read More</button>
             </div>
           </div>
-
-          <div className="col-12-md">
-            <div className="w-50 mx-auto mt-3">
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="mt-3">
               <h4>India extends ban on scheduled international flights till</h4>
               <p>
                 What defines adventure? For me it’s very simple: the very possibility of death, as remote as it may
@@ -109,9 +113,10 @@ const Blogs = () => {
               <button className="btn btn-outline-primary ">Read More</button>
             </div>
           </div>
-
-          <div className="col-12-md">
-            <div className="w-50 mx-auto mt-3">
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="mt-3">
               <h4>Offbeat places to visit over Diwali long weekend</h4>
               <p>
                 What defines adventure? For me it’s very simple: the very possibility of death, as remote as it may
