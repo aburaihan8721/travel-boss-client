@@ -50,7 +50,7 @@ function App() {
               <AddService />
             </PrivateRoute>
 
-            <PrivateRoute exact path="/package/:id">
+            <PrivateRoute exact path="/packages/:id">
               <PlaceOrder />
             </PrivateRoute>
 

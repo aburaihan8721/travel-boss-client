@@ -13,7 +13,7 @@ const PlaceOrder = () => {
   // console.log(id);
 
   useEffect(() => {
-    fetch(`https://safe-tor-64824.herokuapp.com/${id}`)
+    fetch(`https://safe-tor-64824.herokuapp.com/packages/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(res.statusText);

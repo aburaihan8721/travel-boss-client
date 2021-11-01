@@ -49,7 +49,7 @@ const Packages = () => {
                 <p>{singlePackage.shortDes}</p>
                 <h5>{singlePackage.price}</h5>
 
-                <Link to={`/package/${singlePackage._id}`}>
+                <Link to={`/packages/${singlePackage._id}`}>
                   <button className="btn btn-outline-info text-capitalize text-dark">book now</button>
                 </Link>
               </div>
