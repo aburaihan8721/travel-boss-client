@@ -10,7 +10,7 @@ const Footer = () => {
     <div className=" p-5" id="footer-area">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 border-end">
+          <div className="col-md-4 border-end custom-b">
             <div className="p-3 text-center">
               <h4 className="text-white ms-2">
                 {" "}
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-md-4 border-end">
+          <div className="col-md-4 border-end custom-b">
             <div className="p-3 text-center">
               <h4 className="text-white ms-2">Hot Line</h4>
               <ul className="me-4">
